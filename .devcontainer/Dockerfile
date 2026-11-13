@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 # ECLIPSE cloud environment for Godot GDScript and command-line testing.
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-       ca-certificates curl unzip python3 python3-pip python3-venv git \
+       ca-certificates curl unzip python3 python3-pip python3-venv git libfontconfig1 \
     && rm -rf /var/lib/apt/lists/*
 
 # Match the project's local Godot version; verify the downloaded archive.
