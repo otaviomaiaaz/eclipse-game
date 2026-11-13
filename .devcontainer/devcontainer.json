@@ -1,0 +1,10 @@
+{
+  "name": "ECLIPSE - Godot 4.7.2 (Cloud CLI)",
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": ["geequlim.godot-tools", "ms-python.python"]
+    }
+  },
+  "postCreateCommand": "bash -lc 'godot --headless --version && python3 --version && git --version'"
+}
